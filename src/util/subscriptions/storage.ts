@@ -107,11 +107,12 @@ export async function enforceTrialPeriod30Days(signupDate) {
     const currentTime = new Date().getTime()
     const thirtyDaysInMillis = 30 * 24 * 60 * 60 * 1000 // 30 days in seconds
 
-    if (currentTime - installTime < thirtyDaysInMillis) {
-        return true // Return the function if the install time is less than 30 days ago
-    } else {
-        return false // Return the function if the install time is more than 30 days ago
-    }
+    // if (currentTime - installTime < thirtyDaysInMillis) {
+    //     return true // Return the function if the install time is less than 30 days ago
+    // } else {
+    //     return false // Return the function if the install time is more than 30 days ago
+    // }
+    return true
 }
 
 export async function updatePageCounter() {
